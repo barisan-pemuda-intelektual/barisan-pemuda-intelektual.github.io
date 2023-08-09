@@ -180,7 +180,7 @@
     }
     
     .artikel-image img{
-        height: 5em;
+        max-height: 8em;
         object-fit: cover;
     }
 
