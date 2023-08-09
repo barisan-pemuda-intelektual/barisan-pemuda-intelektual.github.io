@@ -1,0 +1,59 @@
+.hero-container {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    max-width: 100%;
+    width: 100%; /* Set width to 30em */
+    height: 100%; /* Set height to 20em */
+    overflow: hidden; /* Hide any overflow */
+    margin: 2em 0 2em 0;
+}
+
+.hero-image {
+    border-radius: 7em 0;
+    filter: brightness(40%);
+    width: 95%;
+    height: 30em;
+    display: block;
+    object-fit: cover; /* Crop the image while maintaining aspect ratio */
+    transition: transform 0.3s, filter 0.3s; /* Add transition for smooth effects */
+}
+
+.hero-image:hover {
+    transform: scale(1.05); /* Zoom in slightly on hover */
+    filter: brightness(70%); /* Set brightness to 100% on hover */
+}
+
+.hero-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.3); /* Adjust the alpha value to control darkness */
+}
+
+.hero-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: white;
+}
+
+.hero-text h1 {
+    font-size: 2.5rem;
+    margin: 0;
+    padding: 10px 20px;
+    border-radius: 5px;
+}
+
+@media screen and (max-width: 600px){
+    .hero-container{
+        margin: 0.5em 0 2em 0;
+    }
+    .hero-image{
+        border-radius: 4.5em 0;
+    }
+}

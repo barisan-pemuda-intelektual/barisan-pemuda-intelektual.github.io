@@ -1,0 +1,175 @@
+/* Navbar Styling */
+.navbar {
+  background-color: #222;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 50px;
+  padding: 0 20px;
+  box-shadow: 0 0 7px black;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 9999;
+}
+
+.navbar-logo img {
+  position: relative;
+  height: 40px;
+  width: auto;
+}
+
+.navbar-logo .shape {
+  position: absolute;
+  background-color: #fff;
+  width: 260px;
+  height: 56px;
+  border-radius: 0 0 30px 0;
+  margin: -10px 0 0 -20px;
+}
+
+.navbar-links {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar-links li {
+  margin-left: 20px;
+  position: relative;
+}
+
+.is-active {
+  border-radius: 0.4em 0;
+  color: #333;
+  background-color: #656565;
+}
+
+.navbar-links a {
+  color: #fff;
+  text-decoration: none;
+  padding: 0.4em;
+  font-size: 0.8em;
+}
+
+.navbar-links a:hover{
+  border-radius: 0.4em 0;
+  color: #333;
+  background-color: #ffffff;
+}
+
+/* Dropdown Menu */
+.dropdown-menu {
+  display: none;
+  position: absolute;
+  top: 100%;
+  right: 0;
+  background-color: #333;
+  padding: 10px;
+  z-index: 1;
+}
+
+.dropdown-menu li {
+  margin: 5px 0;
+}
+
+.dropdown-menu li a {
+  color: #fff;
+  text-decoration: none;
+}
+
+/* Hamburger Icon */
+.hamburger-icon svg {
+  fill: #fff;
+  height: 30px;
+  width: 30px;
+  cursor: pointer;
+}
+
+/* Responsiveness */
+@media screen and (max-width: 600px) {
+    .navbar {
+    background-color: #333;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 40px;
+    padding: 0 10px;
+    box-shadow: 0 0 7px black;
+  }
+
+  .navbar-logo img {
+    position: relative;
+    margin: 0 0 -5px 0;
+    height: 30px;
+    width: auto;
+  }
+
+  .navbar-logo .shape {
+    position: absolute;
+    background-color: #fff;
+    width: 200px;
+    height: 44px;
+    border-radius: 0 0 30px 0;
+    margin: -10px 0 0 -20px;
+  }
+
+  .navbar-links {
+    display: none; /* Menyembunyikan tautan navigasi pada perangkat seluler */
+    flex-direction: column; /* Menampilkan tautan navigasi dalam satu kolom */
+    position: absolute;
+    top: 50px;
+    right: 10px;
+    width: 50%;
+    background-color: #333;
+    padding: 20px;
+    border-radius: 30px 0;
+  }
+
+  .navbar.active .navbar-links {
+    display: flex; /* Menampilkan tautan navigasi ketika kelas 'active' ditambahkan */
+  }
+
+  .navbar-links li {
+    margin: 10px 0;
+  }
+
+  .navbar-links a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1em;
+  }
+
+  .hamburger-icon {
+    display: block; /* Menampilkan icon hamburger pada perangkat seluler */
+  }
+
+  .dropdown-menu {
+    position: static; /* Menampilkan dropdown menu sebagai bagian dari tautan pada perangkat seluler */
+    display: block; /* Menampilkan dropdown menu pada perangkat seluler */
+    margin-top: 5px;
+}
+}
+
+@media screen and (min-width: 601px) {
+  .navbar-links {
+    display: flex; /* Menampilkan tautan navigasi pada perangkat desktop */
+  }
+
+  .hamburger-icon {
+    display: none; /* Menyembunyikan icon hamburger pada perangkat desktop */
+  }
+
+  .dropdown-menu {
+    display: none; /* Menyembunyikan dropdown menu pada perangkat desktop */
+  }
+
+  /* Menampilkan dropdown menu pada perangkat desktop saat kursor berada di atas tautan */
+  .navbar-links li:hover .dropdown-menu {
+    display: block;
+  }
+}

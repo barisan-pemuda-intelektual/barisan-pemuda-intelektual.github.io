@@ -1,0 +1,227 @@
+.artikel {
+    padding: 2em;
+    margin: 14em 0 0 0;
+}
+
+.content-artikel {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.isi-artikel{
+    width: 60%;
+}
+
+.garis-merah{
+    width: 60%;
+}
+
+.garis-merah hr{
+    height: 0.4em;
+    background-color: #a31d1d;
+    border: 0;
+}
+
+.garis-kuning{
+    width: 40%;
+}
+
+.garis-kuning hr{
+    height: 0.4em;
+    background-color: #fff839;
+    border: 0;
+}
+
+.artikel .judul p{
+    margin: 2em 0 -1em 0;
+}
+
+.artikel .judul h1{
+    font-size: 3em;
+}
+
+.artikel .judul h4{
+    margin: -0.5em 0 4em 0;
+    color: #a31d1d;
+}
+
+.artikel-image{
+    margin: 0 0 4em 0;
+    border-radius: 2em 0;
+    padding: 0 0 0.5em 0;
+    background-color: rgb(237, 237, 237);
+}
+
+.artikel-image img{
+    width: 100%;
+    height: 25em;
+    object-fit: cover;
+    border-radius: 2em 0;
+}
+
+.artikel-image p{
+    font-style: italic;
+    padding: 0 0 0 1em;
+}
+
+.pembahasan-artikel p{
+    text-justify: newspaper;
+    line-height: 2em;
+}
+
+.rekomendasi {
+    width: 35%;
+    padding: 2em;
+}
+
+.rekomendasi-artikel .content{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    align-items: center;
+}
+
+.rekomendasi-artikel img {
+    width: 20%;
+    height: 3.5em;
+    object-fit: cover;
+    margin: 0 1em 0 0;
+    border-radius: 1em 0;
+}
+
+.rekomendasi-artikel{
+    background-color: #dddddd;
+    padding: 1.5em;
+    border-radius: 2em 0;
+}
+
+.rekomendasi-artikel .content p{
+    text-justify: newspaper;
+    color: #333;
+}
+
+.rekomendasi-artikel .content:hover{
+    transform: scale(1.05);
+}
+
+.garis-pisah {
+    width: 80%;
+}
+
+.schedule{
+    background-color: #222;
+    margin: 2em 0 1em 0;
+    border-radius: 2em 0;
+    padding: 0 0 1em 0;
+    
+}
+
+.schedule .content{
+    flex-direction: column;
+    margin: -1em 0 0;
+}
+
+.schedule .content h2{
+    color: white;
+    font-size: 1em;
+}
+
+.schedule .content p{
+    color: white;
+    margin: 0 0 0 0;
+    font-size: 0.8em;
+}
+
+@media screen and (max-width:600px){
+    .artikel{
+        padding: 1em;
+        margin: 0;
+    }
+
+    .content-artikel {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .garis-merah{
+        width: 80%;
+    }
+    
+    .garis-merah hr{
+        height: 0.2em;
+        background-color: #a31d1d;
+        border: 0;
+    }
+    
+    .garis-kuning{
+        width: 60%;
+    }
+    
+    .garis-kuning hr{
+        height: 0.2em;
+        background-color: #fff839;
+        border: 0;
+    }
+
+    .judul {
+        margin: 0 0 -2em 0;
+    }
+
+    .artikel .judul h1{
+        font-size: 2em;
+    }
+
+    .isi-artikel{
+        width: 100%;
+    }
+    
+    .artikel-image img{
+        height: 17em;
+        object-fit: cover;
+    }
+
+    .artikel-image{
+        margin: 0 0 1em 0;
+        border-radius: 2em 0;
+        padding: 0 0 0.5em 0;
+        background-color: rgb(237, 237, 237);
+    }
+
+    .rekomendasi {
+        width: 100%;
+        padding: 0;
+    }
+
+    .rekomendasi-artikel .content{
+        margin: 0;
+        padding: 0;
+        display: flex;
+        flex-direction: row;
+        justify-content: left;
+        align-items: center;
+    }
+    
+    .rekomendasi-artikel img {
+        width: 20%;
+        height: 3.5em;
+        object-fit: cover;
+        margin: 0 1em 0 0;
+        border-radius: 1em 0;
+    }
+    
+    .rekomendasi-artikel{
+        background-color: #dddddd;
+        padding: 2em;
+        border-radius: 2em 0;
+    }
+    
+    .rekomendasi-artikel .content p{
+        text-justify: newspaper;
+        color: #333;
+    }
+
+}

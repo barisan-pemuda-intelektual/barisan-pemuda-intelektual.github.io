@@ -1,0 +1,47 @@
+.content {
+    padding: 20px;
+}
+
+footer {
+    margin: 10em 0 0 0;
+    background-image: url('/asets/latar-footer-bpi.png');
+    background-size: cover;
+    background-position: center;
+    color: black;
+    text-align: center;
+    padding: 10px;
+}
+
+footer img {
+    width: 20em;
+}
+
+.social-media {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+.social-media img {
+    width: 2em;
+    padding: 0.5em;
+}
+
+.social-media img:hover {
+    width: 2.5em;
+}
+
+/* Responsif untuk perangkat mobile */
+@media (max-width: 600px) {
+    footer img {
+        width: 15em;
+    }
+
+    .social-media img {
+        width: 1.5em;
+    }
+
+    .social-media img:hover {
+        width: 1.5em;
+    }
+}
